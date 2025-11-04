@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes en html</title>
+</head>
+
+<body style="background-color: red;">
+    <!--Al dar click sobre la imagen muestra la alerta en el navegador-->
+    <img src="img/hacker1.jpeg" alt="" width="200px" height="150px" onclick="mensaje()">
+    <!--Aca inyectaremos un mensaje en un cierto elemento html-->
+    <div id="innerhtml1"></div>
+    <div id="lus" style="width: 100px; height: 100px; background-color: blue;" onclick="holijaja()">Da click sobre mi
+    </div>
+    <div id="showbb">Aca aparecera un texto desde javascript</div>
+    <script>
+        //Esto es un mendigo comentario
+        /*Esto es 
+        un comentario 
+        de varias
+         lineas jaja
+        */
+        function mensaje() {
+            alert("Hola mundo de la programacion en scripting jaja");
+        }
+        //Para usar innerHtml primero tenemos que acceder al elemento a afectar a travez de su id y extrayendolo con un metodo clasico par ello
+        const showjaja = document.getElementById("innerhtml1");
+        //Ponemos su mensaje alli, en un elemento en especifico usando su id jaja
+        //intercambio de texto de su elemento
+        showjaja.innerHTML = "Hola mundo desde javscript";
+        function holijaja() {
+            document.getElementById("showbb").innerHTML = "<br>Hola mundo nuevamente Emmonuel";
+        }
+    </script>
+</body>
+
+</html>
